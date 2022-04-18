@@ -21,5 +21,7 @@ spec:
       targetPort: 4444
   selector:
     io.kompose.service: selenium-hub
+  type: NodePort
+  sessionAffinity: None
 status:
   loadBalancer: {}
